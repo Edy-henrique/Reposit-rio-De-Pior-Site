@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fila Fácil - Cadastro</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Cadastro</h1>
+    <div class="caixa">
+      <label for="nome">Nome completo (obrigatoriamente completo):</label>
+      <input id="nome" type="text" placeholder="Digite seu nome">
+
+      <label for="email">E-mail (não esqueça de esquecer o e-mail):</label>
+      <input id="email" type="email" placeholder="exemplo@exemplo.com">
+
+      <p id="erro" class="erro"></p>
+
+      <button class="btn btn-confuso" onclick="voltar()">Voltar para frente</button>
+      <button class="btn btn-principal" onclick="validarCadastro()">Prosseguir (talvez)</button>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>

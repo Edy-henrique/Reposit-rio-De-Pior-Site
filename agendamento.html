@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fila Fácil - Agendamento</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Escolha seu atendimento</h1>
+    <div class="caixa">
+      <label for="servico">Serviço:</label>
+      <select id="servico">
+        <option value="">Escolha alguma coisa</option>
+        <option>Atendimento geral</option>
+        <option>Entrega de documentos</option>
+        <option>Informações</option>
+      </select>
+
+      <label for="data">Data:</label>
+      <input id="data" type="date">
+
+      <label for="hora">Horário:</label>
+      <select id="hora">
+        <option value="">Selecione, mas não muito rápido</option>
+        <option>08:00</option>
+        <option>09:00</option>
+        <option>10:00</option>
+        <option>14:00</option>
+      </select>
+
+      <p id="erroAgendamento" class="erro"></p>
+
+      <button class="btn btn-confuso" onclick="window.location.href='cadastro.html'">Confirmar cancelamento</button>
+      <button class="btn btn-principal" onclick="validarAgendamento()">Finalizar sem finalizar</button>
+    </div>
+  </main>
+  <script src="js/script.js"></script>
+</body>
+</html>
